@@ -1,0 +1,21 @@
+{
+    "name": "sundflux/webvaloa-fields",
+    "description": "Webvaloa fields, part of Webaloa platform",
+    "keywords": ["webvaloa"],
+    "homepage": "http://github.com/sundflux/webvaloa-fields",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tarmo Alexander Sundstrom",
+            "email": "ta@sundstrom.io",
+            "homepage": "http://www.webvaloa.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.19"
+    },
+    "autoload": {
+        "psr-4": {"Webvaloa\\": "src/Webvaloa"}
+    }
+}
