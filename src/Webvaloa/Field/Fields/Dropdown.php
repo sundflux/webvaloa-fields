@@ -54,13 +54,19 @@ class Dropdown
     private $fieldID;
 
     /**
-     * Dropdown constructor.
-     *
-     * @param bool $fieldID
+     * @var
      */
-    public function __construct($fieldID = false)
+    private $contentID;
+
+    /**
+     * Dropdown constructor.
+     * @param bool $fieldID
+     * @param bool $contentID
+     */
+    public function __construct($fieldID = false, $contentID = false)
     {
         $this->fieldID = $fieldID;
+        $this->contentID = $contentID;
 
         if (is_numeric($this->fieldID)) {
             $this->field = new Field($this->fieldID);

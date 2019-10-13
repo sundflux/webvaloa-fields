@@ -67,6 +67,7 @@ class Categorypicker
     public function __construct($fieldID = false, $contentID = false)
     {
         $this->fieldID = $fieldID;
+        $this->contentID = $contentID;
 
         if (is_numeric($this->fieldID)) {
             $this->field = new Field($this->fieldID);

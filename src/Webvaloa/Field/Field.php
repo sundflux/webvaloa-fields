@@ -37,6 +37,7 @@ use Libvaloa\Debug\Debug;
 use Webvaloa\Filesystem;
 use Webvaloa\Path;
 use stdClass;
+use Exception;
 
 /**
  * Class Field.
@@ -70,15 +71,16 @@ class Field
 
     /**
      * Field constructor.
-     *
      * @param bool $fieldID
      * @param bool $contentID
+     * @throws Db\DBException
      */
     public function __construct($fieldID = false, $contentID = false)
     {
         $this->pathHelper = new Path();
         $this->object = new Db\Item('field', \Webvaloa\Webvaloa::DBConnection());
         $this->fieldID = $fieldID;
+        $this->contentID = $contentID;
 
         if ($this->fieldID) {
             $this->object->byID($this->fieldID);

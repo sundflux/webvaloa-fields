@@ -43,13 +43,24 @@ class Separator
     private $field;
 
     /**
+     * @var
+     */
+    private $contentID;
+
+    /**
+     * @var bool
+     */
+    private $fieldID;
+
+    /**
      * Separator constructor.
      *
      * @param bool $fieldID
      */
-    public function __construct($fieldID = false)
+    public function __construct($fieldID = false, $contentID = false)
     {
         $this->fieldID = $fieldID;
+        $this->contentID = $contentID;
     }
 
     /**

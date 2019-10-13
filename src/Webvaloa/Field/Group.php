@@ -33,7 +33,9 @@
 namespace Webvaloa\Field;
 
 use Libvaloa\Db;
+use Exception;
 use RuntimeException;
+use OutOfBoundsException;
 
 /**
  * Class Group.
@@ -52,8 +54,8 @@ class Group
 
     /**
      * Group constructor.
-     *
      * @param bool $groupID
+     * @throws Db\DBException
      */
     public function __construct($groupID = false)
     {

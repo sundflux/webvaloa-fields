@@ -35,6 +35,7 @@ namespace Webvaloa\Field;
 use Libvaloa\Db;
 use Libvaloa\Debug\Debug;
 use UnexpectedValueException;
+use Exception;
 
 /**
  * Class Value.

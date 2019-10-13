@@ -81,9 +81,7 @@ class Tags
             $this->fieldID = $fieldID;
         }
 
-        if (is_numeric($contentID)) {
-            $this->contentID = $contentID;
-        }
+        $this->contentID = $contentID;
     }
 
     /**

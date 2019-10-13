@@ -61,6 +61,7 @@ class Wysiwyg
     public function __construct($fieldID = false, $contentID = false)
     {
         $this->fieldID = $fieldID;
+        $this->contentID = $contentID;
     }
 
     /**
